@@ -1,11 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const fs = require('fs');
 const app = express();
 
 app.use(bodyParser.json());
+app.use(cors());
 
 const secretKey = 'bharathkumar';
 const usersFile = 'users.json';
@@ -41,7 +43,7 @@ app.post('/register', (req, res) => {
 
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
-  
+
   const users = readJSONFile(usersFile);
   const user = users.find((u) => u.username === username);
 
