@@ -41,6 +41,7 @@ app.post('/register', (req, res) => {
 
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
+  
   const users = readJSONFile(usersFile);
   const user = users.find((u) => u.username === username);
 
