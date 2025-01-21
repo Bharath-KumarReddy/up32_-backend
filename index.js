@@ -6,8 +6,14 @@ const bcrypt = require('bcryptjs');
 const fs = require('fs');
 const app = express();
 
+app.use(cors({
+  origin: 'http://localhost:5173',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(bodyParser.json());
-app.use(cors());
+
 
 const secretKey = 'bharathkumar';
 const usersFile = 'users.json';
