@@ -12,11 +12,17 @@ const usersFile = 'users.json';
 const dataFile = 'data.json';
 
 const readJSONFile = (filename) => {
-  if (fs.existsSync(filename)) {
-    return JSON.parse(fs.readFileSync(filename, 'utf-8'));
-  }
-  return [];
-};
+    if (fs.existsSync(filename)) {
+      const fileContent = fs.readFileSync(filename, 'utf-8');
+      try {
+        return JSON.parse(fileContent);
+      } catch (e) {
+        return []; 
+      }
+    }
+    return []; 
+  };
+  
 
 const writeJSONFile = (filename, content) => {
   fs.writeFileSync(filename, JSON.stringify(content, null, 2), 'utf-8');

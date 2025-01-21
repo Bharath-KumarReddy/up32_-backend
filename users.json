@@ -4,7 +4,23 @@
     "password": "$2a$08$kxP8FlonwkpcmFuspr1hB.d2tD072BBG3hrdduml0N0iwaAvgd0qO"
   },
   {
-    "username": "a1",
-    "password": "$2a$08$mo1jw2Rem7S0sHXoxd5WIuCRsDcXXr8S4vRS28AblTYK0xWTIYZp6"
+    "username": "v1",
+    "password": "$2a$08$Jepp7NDeKo7RIMyi3QodLed.5d5QBnWJKUgdKr5joVeSFH1mlhlU6"
+  },
+  {
+    "username": "v2",
+    "password": "$2a$08$r8xPHLbjV2x4SyYMr0KWkO3CDcLjeag9F7mN968lQnzK21Ki0nLEO"
+  },
+  {
+    "username": "l1",
+    "password": "$2a$08$MqMrX3AlxksxFs85Qur8E.UQlPw4Dx3sFjhwGMbHuyWoYdGgnqG/O"
+  },
+  {
+    "username": "u1",
+    "password": "$2a$08$Bt4rxm2Uxik7vvwnTZwNNuvoU.Ki6.jTT38GzTJwsoFTbjNEEGIum"
+  },
+  {
+    "username": "p1",
+    "password": "$2a$08$PSblRJlH6Mgh2DWc8KKz4e2pf3qq6cUfaR6UP4QAKGK2xG86dN8xu"
   }
 ]
